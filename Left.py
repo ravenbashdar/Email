@@ -25,7 +25,6 @@ passworde = getpass.getpass('\033[94m[?]\033[97m Pass \033[91mpordakat\033[97m :
 print(" ")
 
 victime = raw_input('\033[94m[?]\033[97m The victime \033[91mEMAIL\033[97m : \033[93m')
-
 message = raw_input('\033[94m[?]\033[97m Your \033[92mMessage\033[97m : \033[93m')
 
 print(" ")
