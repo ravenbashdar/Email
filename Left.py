@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 # =========================================================================================================================================
 import os
@@ -7,29 +6,29 @@ import smtplib
 import sys
 import getpass
 import time
-# =======================       Arez        ================================================================================================
+# ======================= HEADING ================================================================================================
 os.system('clear')
 print ('''
-     _     ______  _______  ________                       
-    | |    |    /  |     |         /                
-   |   |   |/ /    |             /    
-  |     |  |  /    |_____      /
-  |-----|  |  \    |         /         
-  |     |  |   \   |_____| /________  
+     _     ______ ______  _______                      
+    | |    |    / |             /     
+   |   |   |  /   |            / 
+  |     |  | /    |           /
+  |-----|  |\     |          / 
+  |     |  | \    |_____    /____                      
                             By \033[93m@Ravo_m\033[97m
 ''')
 print(" ")
-#########################   Zanyari kase ##########################
-User = raw_input('\033[94m[?] \033[97mEmail \033[92mkat\033[97m :\033[93m ')
-passworde = getpass.getpass('\033[94m[?]\033[97m Pass \033[91mpordakat\033[97m :\033[93m ')
+#########################   USER INFO ##########################
+user = raw_input('\033[94m[?] \033[97mYour \033[92mGmail\033[97m :\033[93m ')
+passworde = getpass.getpass('\033[94m[?]\033[97m Your \033[91mPassword\033[97m :\033[93m ')
 print(" ")
 victime = raw_input('\033[94m[?]\033[97m The victime \033[91mEMAIL\033[97m : \033[93m')
 message = raw_input('\033[94m[?]\033[97m Your \033[92mMessage\033[97m : \033[93m')
 print(" ")
-hani = input('\033[94m[?] \033[97mNumber of \033[92mnardn\033[97m : \033[93m')
+hani = input('\033[94m[?] \033[97mNumber of \033[92msend\033[97m : \033[93m')
 print(" ")
 print("\033[94m[*] \033[97mSending : ")
-############################### Zanyari Server ##################
+############################### SMTP_SERVER INFO ##################
 smtp_server = 'smtp.gmail.com'
 port = 587
 
@@ -45,10 +44,10 @@ try:
         subject = os.urandom(9)
         msg = 'From: ' + user + '\nSubject: ' + subject + '\n' + message
         server.sendmail(user,victime,msg)
-        print ("\033[94m[✔]\033[97m namaka \033[92mNardra\033[97m  :\033[93m %i") % i
+        print ("\033[94m[✔]\033[97m Email \033[92mSENT\033[97m  :\033[93m %i") % i
         sys.stdout.flush()
     server.quit()
-    print ('\033[93m[✔]\033[97m Hamuu \033[97mMessage was\033[92m Nardrwakan\033[97m ')
+    print ('\033[93m[✔]\033[97m All \033[97mMessage was\033[92m sent\033[97m ')
     
     
 except KeyboardInterrupt:
