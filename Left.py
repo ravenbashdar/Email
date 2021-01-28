@@ -23,10 +23,8 @@ print(" ")
 User = raw_input('\033[94m[?] \033[97mEmail \033[92mkat\033[97m :\033[93m ')
 passworde = getpass.getpass('\033[94m[?]\033[97m Pass \033[91mpordakat\033[97m :\033[93m ')
 print(" ")
-
 victime = raw_input('\033[94m[?]\033[97m The victime \033[91mEMAIL\033[97m : \033[93m')
 message = raw_input('\033[94m[?]\033[97m Your \033[92mMessage\033[97m : \033[93m')
-
 print(" ")
 hani = input('\033[94m[?] \033[97mNumber of \033[92mnardn\033[97m : \033[93m')
 print(" ")
